@@ -30,16 +30,16 @@ ul{
 /* Header */
 .header{
     background-color: #F7CA11;
-    box-shadow: 1px 1px 5px 0px var(--grey);
+    box-shadow: 1px 1px 5px 0px grey;
     position: sticky;
-    top: 0;
+    height: 115px;
     width: 100%;
 }
 
 /* Logo */
 .logo{
     display: inline-block;
-    color: var(--white);
+    color: white;
     font-size: 60px;
     margin-left: 10px;
 
@@ -50,26 +50,24 @@ ul{
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: var(--black);
+    background-color: rgb(88, 83, 83);
     overflow: hidden;
-    
+    max-height: 0;
+    transition: max-height .5s ease-out;
+    z-index: 1;
 }
 
 .menu a{
     display: block;
     padding: 30px;
-    color: var(--white);
+    color: white
 
 }
 
 .menu a:hover{
-    background-color: var(--grey);
+    background-color: grey;
 }
 
-.nav{
-    max-height: 0;
-    transition: max-height .5s ease-out;
-}
 
 /* Menu Icon */
 
@@ -77,11 +75,12 @@ ul{
     cursor: pointer;
     float: right;
     padding: 40px 20px;
+    margin-top: 20px;
 }
 
 
 .hamb-line {
-    background: var(--white);
+    background: white;
     display: block;
     height: 2px;
     position: relative;
@@ -91,7 +90,7 @@ ul{
 
 .hamb-line::before,
 .hamb-line::after{
-    background: var(--white);
+    background: white;
     content: '';
     display: block;
     height: 100%;
@@ -139,11 +138,22 @@ ul{
 .videostemning{
     max-width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: -2;
     
 }
 
 
 /* test */
+
+.test{
+    display: inline-flex;
+    margin-left: 50%;
+   position: relative;
+   margin-bottom: 50px;
+   color: white;
+    
+}
 
 
 
@@ -160,6 +170,14 @@ ul{
 
     }
 
+    .header{
+    top: 0;
+    }
+
+    .test{
+        display: none;
+    }
+
     .menu li{
         float: left;
     }
@@ -173,5 +191,6 @@ ul{
     .hamb{
         display: none;
     }
+
 
 }
