@@ -7,43 +7,214 @@
     <link rel="stylesheet" href="style.css">
     <title>Samfest.dk</title>
 </head>
+
+
+
 <body>
         
-    <!-- Navigation bar -->
-    <header class="header">
-        <!-- Logo -->
-        <a href="#" class="logo">LR</a>
 
-        <div class="test"> <h3>køb billet</h3></div>
-        
 
-        <!-- Hamburger icon -->
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
-        
-
-        <!-- Menu -->
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="#">Program</a></li>
-                <li><a href="#">Blillettyper</a> </li>
-                <li><a href="#">Om festivallen</a></li>
-                <li><a href="#">Frivillige</a></li>
-                <li><a href="#">Galleri</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main content -->
+    <!-- Main -->
     
     <main>
-        <div class="videostemning">
+
+
+        <div class="stemningsvideo">
             <video width="100%" autoplay="" muted="" loop="" playsinline="" src="https://nibefestival.dk/wp-content/uploads/2022/07/outputcompress-video-online.com-1-5.mp4" ></video>
+            <h1>Danmarks Hyggeligste Festival</h1>
+        </div>
+    
+        
+       
+        
+        <div id="kunstnernavne">
+            <div id="navne"> 
+                <H2>KESI · PHLAKE · LASSE SKRIVER · SAVEUS · THOMAS HEMLIG · TV-2 · LÅGSUS · FAUSTIX · D-A-D · CARPARK NORTH</H2> 
+            </div>
+            <div id="linje"></div>
+            <div id="navne2"> 
+                    <H2>KESI · PHLAKE · LASSE SKRIVER · SAVEUS · THOMAS HEMLIG · TV-2 · LÅGSUS · FAUSTIX · D-A-D · CARPARK NORTH</H2> 
+            </div>
+        </div>
+
+        <div id="program">
+        <h1>Program</h1>
+        <p>2023 D.19-22 JULI</p>
+        </div>
+
+        <div class="plakat">
+            <img src="" alt="program">
+
+            <div class="kanpboks">
+              <button class="knap">SE HELE PROGRAMMET</button>
+            </div>
+
+        </div>
+        
+
+       <div id="bestilbillet">
+            <p>SAMSØ FESTIVAL</p>
+            <H3>BESTIL BILLETTER</H3>
+            
+            
+            <h5>
+                Hvert år bliver alle billetterne til Samsø Festival udsolgt! <br><br>
+                Så se og få bestilt dine billetter til dette års festival. 
+                Vi lover at det bliver et brag af en fest, som du ikke vil gå glip af.
+            </h5>
+            <br><br>
+            <p> Priser fra</p>
+            <h1>750 KR.</h1>
+
+            <button class="knap">LÆS MERE</button>
+        </div>
+
+      <div id="billedemedhjælper"> <img src="media/medhjælper.webp" alt="medhjælper"> </div>
+
+        <div id="medhjælper">
+            <h1>BLIV MEDHJÆLPER</h1> 
+        </div>
+
+        <div id="medhjælpertekst">
+            <h5>
+                Danmarks hyggeligste festival - Samsø Festival er primært bygget op ved hjælp fra vores fantastiske frivillige. <br><br><br>
+                Som frivillig får du en masse fordele, fri adgang til festivalen og medarbejderarmbånd, hvis du tilgengæld vil arbejde minimum 21 timer under festivalen. 
+                Derudover er det også en god oplevelse og et godt socialt sammehold man får, når man bliver en del af teamet.
+            </h5>
+        </div>
+
+        <button class="knap2">LÆS MERE</button>
+       
+        <div id="nedtælling">
+
+            <H3>NEDTÆLLING TIL SAMSØ FESTIVAL</H3>
+
+            <p id="demo"></p>
+
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("July 19, 2023 13:59:59").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+                    
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+                    
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+                    
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+                }, 1000);
+            </script>
+
         </div>
 
         
+
+
+        <form action="/action_page.php">
+        <div class="container">
+        <h2>NYHEDSBREV</h2>
+        <p>Hver sikker på at være den første til at få en billet og få afsløret næste års artister ved at tilmelde dig nyhedsbrevet.</p>
+        </div>
+    
+        <div class="container" style="background-color:white">
+            <input type="text" placeholder="NAVN" name="name" required>
+            <input type="text" placeholder="EMAIL" name="mail" required>
+            <label>
+        
+        </div>
+        
+         
+        <button class="knap3">TILMELD</button>
+       
+        
+        
+
+        
+          
+       
+
+        
     </main>
+
+    <footer>
+        <div class="footer">
+
+            <h4>KONTAKT</h4>
+            <br>
+            <br>
+            <p>
+                info@samfest.dk
+                <br>
+                <br>
+                Telefon: 86 59 18 15
+                <br>
+                <br>
+                Besvares så vidt muligt dagligt 
+                <br>
+                <br>
+                09.00-18.00
+                <br>
+                <br>
+                Kontoret:
+                Fredag 10.00-15.30
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="footer">
+            <h4>INFO</h4>
+            <br>
+            <br>
+            <p>
+                Samsø Festival Forening​
+                <br>
+                <br>
+                Strandskoven 7C​ 
+                <br>
+                <br>
+                8305 Samsø
+                <br>
+                <br>
+                CVR: 17 87 79 84
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="footer3">
+            <h4> FØLG OS</h4>
+            <br>
+            <br>
+            <p>
+                Instagram
+                <br>
+                <br>
+                Facebook
+                <br>
+                <br>
+                TikTok
+                <br>
+                <br>
+                #SAMFEST
+            </p>
+        </div>
+      </footer>
     
 </body>
 </html>
