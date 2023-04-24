@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    hyphens: auto;
 }
 
 body{
@@ -65,18 +66,16 @@ nav {
 .nav-link {
     color: #000000;
     text-decoration: none;
-    font-size: 18px;
-    margin: 0 10px;
+    font-size: 14px;
+    margin: 0 42px;
     transition: all 0.3s ease-in-out;
     display: block;
-    padding: 10px
-    
+    padding: 10px  
     
 }
   
-.nav-link:hover {
-    color: #000;
-    background-color: #fff
+.nav-link:hover{
+    background-color: #fff;
     border-radius: 5px;
     padding: 5px;
 }
@@ -97,12 +96,12 @@ nav {
 
 #burgerside{
     width:100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:15pt;
     display:flex;
     align-items:center;
     flex-direction:column;
     justify-content:center; 
+    background-color: #F9D74D;
 }
 
 #burgerside a{
@@ -116,7 +115,10 @@ nav {
     justify-content:center;  
 }
 #burgerside a:hover {
-    text-shadow:1px 1px 1px black;   
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+     
 }
 
 /* main */
@@ -232,7 +234,7 @@ video {
 }
 
 
-/* bestil billet */
+/* bestil billet mobile */
 
 #bestilbillet{
 
@@ -245,6 +247,7 @@ video {
 
 
 }
+
 
 #bestilbillet h3{
     padding-bottom: 40px;
@@ -262,7 +265,20 @@ video {
     padding-bottom: 80px;
 }
 
+/* bestil billet laptop */
+
+#bestilbilletlaptop{
+
+display: none;
+
+}
+
 /* medhjælper */
+
+#medhjælperlaptop{
+
+display: none;
+}
 
 #billedemedhjælper{
     padding-top: 100px;
@@ -330,7 +346,7 @@ height: 100%;
 
 /* nyhedsbrev */
 
-.container {
+.nyhedsbrev {
     margin-top: 40px;
     padding: 20px;
     text-align:center;
@@ -408,11 +424,54 @@ footer {
 
 }
 
+/* programsiden */
+
+#programside {
+    display: flex;
+    flex-direction: column;
+}
+  
+#programbokse {
+    background-color: #ccc;
+    margin: 60px;
+    padding: 20px;
+    hyphens: auto;
+}
+  
+#programbokse:first-child {
+    margin-top: 400px;
+}
+
+
+#programside h2, p,h3 {
+    margin: 15px;
+    padding: 0;
+    font-family: ;
+}
+    
+#programside h1{
+
+    font-size: 8vw;
+    color: #F9D74D;
+    width: 70%;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+#programside h2{
+
+    font-size: 8vw;
+    color: black;
+    width: 100%;
+}
+  
+ 
   
 
-/* mobile first */
+  
 
-@media (min-width: 768px) {
+/* laptop repsonsiv */
+
+@media (min-width: 800px) {
 
     /* header */
 
@@ -420,6 +479,26 @@ footer {
         display: flex;
         align-items: center;
     }
+
+    .knap4 {
+        background-color: #F7CA11;
+        color: black;
+        border: none;
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .knap4:hover{
+      
+        background-color: #fff;
+        
+        
+    }
+   
 
     .hamburger-menu {
         display: none;
@@ -441,7 +520,67 @@ footer {
 
     /* main */
 
+    /* bestil billet laptop */
 
+    #bestilbillet{
+    display: none;
+
+    }
+
+    #bestilbilletlaptop {
+        display: flex;
+    }
+      
+    #billetbillede {
+        flex-basis: 50%;
+        padding-left: 40px;
+    }
+      
+    #billetbillede img {
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    #bestilbillet2{
+
+        text-align: center;
+        padding: 5%;
+        flex-basis: 50%;
+        padding-left: 40px;
+        text-align: left;
+    
+    
+    }
+
+    #bestilbillet2 h3{
+        font-size: 40px;
+        padding-bottom: 15px ;
+    }
+    
+    
+    #bestilbillet2 h5{
+        font-weight: bold;
+    }
+    
+    #bestilbillet2 h1{
+        padding-top: 15px;
+        padding-bottom: 40px;
+
+    }  
+      
+
+
+    /* nedtælling */
+
+    #nedtælling{
+    background-color: white;
+    }
+
+    /* nyhedsbrev */
+
+
+   
+   
 
     /* footer */
 
@@ -456,7 +595,87 @@ footer {
         display: block;
         
         
-      }
+    }
 
 }
 
+
+
+@media (min-width: 1200px) {
+
+    /* medhjælper laptop */
+
+    #medhjælperkontrol{
+        display: none;
+    }
+
+
+    
+    #medhjælperlaptop {
+        display: flex;
+    }
+      
+    #medlaptoptkest {
+        flex-basis: 50%;
+        padding-right: 10px;
+    }
+      
+    #medhjælperbillede {
+        flex-basis: 50%;
+        padding-top: 10%;
+        padding-right: 40px;
+    }
+      
+    #medhjælperbillede img {
+        width: 100%;
+    }
+      
+    
+    #medhjælpertekstlaptop{
+    
+        text-align: center;
+        padding: 5%;
+        flex-basis: 50%;
+        padding-left: 40px;
+        text-align: left;
+        
+        
+    }
+    #medhjælpertekstlaptop h5{
+
+        font-size: 1vw;
+        }
+
+    #medhjælpertekstlaptop h3{
+        padding-top: 50px;
+        font-size: 40px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+
+    }
+        
+        
+    #medhjælpertekstlaptop h4{
+    
+    font-weight: 900;
+     font-size: 2vw;      
+    }
+   
+   
+   
+   
+}
+
+
+@media (max-width: 1200px) {
+
+
+    
+
+ .nav-link{
+ font-size: 14px;
+ margin: 0 15px;
+ }
+
+
+}

@@ -22,7 +22,10 @@
           <img src="media/logolille.png" alt="Logo">
         </a>
         <nav>
-          <a class="nav-link" href="#">PROGRAM</a>
+           
+          <button class="knap4">KØB BILLET</button>
+          
+          <a class="nav-link" href="program.html">PROGRAM</a>
           <a class="nav-link" href="#">BILLETTER</a>
           <a class="nav-link" href="#">PRAKTISK</a>
           <a class="nav-link" href="#">GALLERI</a>
@@ -97,7 +100,33 @@
             </div>
 
         </div>
+
+        <!-- laptop bestil billet -->
         
+        <div id="bestilbilletlaptop">
+
+            <div id="billetbillede">
+              <img src="media/samsøbillet.webp" alt="Your Image">
+            </div>
+
+            <div id="bestilbillet2">
+                <H3> BILLETTER</H3>
+                
+                
+                <h5>
+                    Hvert år bliver alle billetterne til Samsø Festival udsolgt! <br><br>
+                    Så se og få bestilt dine billetter til dette års festival. 
+                    Vi lover at det bliver et brag af en fest, som du ikke vil gå glip af.
+                </h5>
+                <br><br>
+                <p> Priser fra</p>
+                <h1>750 KR.</h1>
+    
+                <button class="knap">LÆS MERE</button>
+            </div>
+        </div>
+        
+        <!-- mobile bestilbillet -->
 
        <div id="bestilbillet">
             <p>SAMSØ FESTIVAL</p>
@@ -116,21 +145,75 @@
             <button class="knap">LÆS MERE</button>
         </div>
 
-      <div id="billedemedhjælper"> <img src="media/medhjælper.webp" alt="medhjælper"> </div>
+       <!-- bliv medhjælper laptop -->
+       
+       
+        <div id="medhjælperlaptop">
 
-        <div id="medhjælper">
-            <h1>BLIV MEDHJÆLPER</h1> 
+            <div id="medhjælpertekstlaptop">
+                
+                <H3>BLIV FRIVILLIG</H3>
+                
+                
+                <div id="medhjælpertekstlaptop">
+                    <h5>
+                        <h4>FRIVILLIG JOB PÅ SAMSØ FESTIVAL</h4>
+                        <br><br>
+                        Samsø Festival er drevet af ca. 3.000 frivillige medhjælpere. 
+                        3.000 ildsjæle, der brænder for musikken, fællesskabet og det kick, det giver at være med til at afvikle østjyllands største musik-begivenhed. 
+                        Alle medhjælpere løfter i flok og bidrager til, at Samsø Festival år efter år er Danmarks hyggeligste festival.
+
+                        <br><br>
+
+                        <h4>HVORFOR SKAL DU BLIVE FESTIVAL FRIVILLIG?</h4>
+                        <br><br>
+
+                    <li> Bliv en del af en af østjyllands største festivaller</li>
+                        <br>
+                    <li> Uforglemmelige oplevelser</li>
+                    <br>
+                    <li> Fantastiske venskaber</li>
+                    <br>
+                    <li> Medhjælperfest </li>
+                    <br>
+                    <li> Vær med til at skabe en fabelagtigt stemning</li>
+                    <br>
+                    <li> Adgang til Crew Camp</li>
+                    </h5>
+                </div>
+
+                <button class="knap">LÆS MERE</button>
+            </div>
+
+            <div id="medhjælperbillede">
+                <img src="media/medhjælper.webp" alt="medhjælperbillede">
+            </div>    
+       </div>
+      
+
+
+ 
+
+       <!-- medhjælper mobile first -->
+
+      <div id="medhjælperkontrol">
+            <div id="billedemedhjælper"> <img src="media/medhjælper.webp" alt="medhjælper"> </div>
+
+                <div id="medhjælper">
+                    <h1>BLIV MEDHJÆLPER</h1> 
+                </div>
+
+                <div id="medhjælpertekst">
+                    <h5>
+                        Danmarks hyggeligste festival - Samsø Festival er primært bygget op ved hjælp fra vores fantastiske frivillige. <br><br>
+                        Som frivillig får du en masse fordele, fri adgang til festivalen og medarbejderarmbånd, hvis du tilgengæld vil arbejde minimum 21 timer under festivalen. 
+                        Derudover er det også en god oplevelse og et godt socialt sammehold man får, når man bliver en del af teamet.
+                    </h5>
+                </div>
+
+            <button class="knap2">LÆS MERE</button>
+
         </div>
-
-        <div id="medhjælpertekst">
-            <h5>
-                Danmarks hyggeligste festival - Samsø Festival er primært bygget op ved hjælp fra vores fantastiske frivillige. <br><br><br>
-                Som frivillig får du en masse fordele, fri adgang til festivalen og medarbejderarmbånd, hvis du tilgengæld vil arbejde minimum 21 timer under festivalen. 
-                Derudover er det også en god oplevelse og et godt socialt sammehold man får, når man bliver en del af teamet.
-            </h5>
-        </div>
-
-        <button class="knap2">LÆS MERE</button>
        
         <div id="nedtælling">
 
@@ -175,12 +258,15 @@
 
 
         <form action="/action_page.php">
-        <div class="container">
-        <h2>NYHEDSBREV</h2>
-        <p>Hver sikker på at være den første til at få en billet og få afsløret næste års artister ved at tilmelde dig nyhedsbrevet.</p>
+
+        <div class="nyhedsbrev">
+            <h2>NYHEDSBREV</h2>
+            <br>
+            <br>
+            <p>Hver sikker på at være den første til at få en billet og få afsløret næste års artister ved at tilmelde dig nyhedsbrevet.</p>
         </div>
     
-        <div class="container" style="background-color:white">
+        <div class="nyhedsbrev" style="background-color:white">
             <input type="text" placeholder="NAVN" name="name" required>
             <input type="text" placeholder="EMAIL" name="mail" required>
             <label>
