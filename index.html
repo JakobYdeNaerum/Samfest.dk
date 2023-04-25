@@ -68,9 +68,10 @@
     
     <main>
 
+        <!-- Stemningsvideo + kunstnernavne og plakat -->
 
-        <div class="stemningsvideo">
-            <video width="100%" autoplay="" muted="" loop="" playsinline="" src="media/samsøfestival video.mp4" ></video>
+        <div id="stemningsvideo">
+            <video autoplay muted loop  src="media/samsøfestival video.mp4" ></video>
             <h1>DANMARKS HYGGELIGSTE FESTIVAL</h1>
         </div>
     
@@ -83,7 +84,7 @@
             </div>
             <div id="linje"></div>
             <div id="navne2"> 
-                    <H2>KESI · PHLAKE · LASSE SKRIVER · SAVEUS · THOMAS HEMLIG · TV-2 · LÅGSUS · FAUSTIX · D-A-D · CARPARK NORTH</H2> 
+                    <H2>SWAN LEE · DE DANSKE HYRDER  · JADA · BLÆST · KELLERMENSCH · TV-2 · SANNE SALOMONSEN · FAUSTIX · SAINT CLARA · ANNIKA ÅKJÆR</H2> 
             </div>
             <div id="linje"></div>
         </div>
@@ -92,19 +93,19 @@
         <h1>Program</h1>
         </div>
 
-        <div class="plakat">
+        <div id="plakat">
             <img src="media/mobileplakat.png" alt="program">
         
         </div>
 
-        <div class="plakatlaptop">
+        <div id="plakatlaptop">
             <img src="media/laptopplakat.png" alt="program">
         
         </div>
 
         <div class="kanpboks">
             <button class="knap">SE HELE PROGRAMMET</button>
-          </div>
+        </div>
 
         <!-- laptop bestil billet -->
         
@@ -151,8 +152,7 @@
         </div>
 
        <!-- bliv medhjælper laptop -->
-       
-       
+
         <div id="medhjælperlaptop">
 
             <div id="medhjælpertekstlaptop">
@@ -194,10 +194,6 @@
                 <img src="media/medhjælper.png" alt="medhjælperbillede">
             </div>    
        </div>
-      
-
-
- 
 
        <!-- medhjælper mobile first -->
 
@@ -223,40 +219,43 @@
             <button class="knap2">LÆS MERE</button>
 
         </div>
+
+
+       <!-- inspiration fra hvordan W3schools lavede den -->
        
         <div id="nedtælling">
 
             <H3>NEDTÆLLING TIL SAMSØ FESTIVAL</H3>
 
-            <p id="demo"></p>
+            <p id="samfest"></p>
 
             <script>
-                // Set the date we're counting down to
+                
                 var countDownDate = new Date("July 19, 2023 13:59:59").getTime();
 
-                // Update the count down every 1 second
+                
                 var x = setInterval(function() {
 
-                // Get today's date and time
+                
                 var now = new Date().getTime();
                     
-                // Find the distance between now and the count down date
+                
                 var distance = countDownDate - now;
                     
-                // Time calculations for days, hours, minutes and seconds
+                
                 var days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                     
-                // Output the result in an element with id="demo"
-                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                
+                document.getElementById("samfest").innerHTML = days + "d " + hours + "h "
                 + minutes + "m " + seconds + "s ";
                     
-                // If the count down is over, write some text 
+                
                 if (distance < 0) {
                     clearInterval(x);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
+                    document.getElementById("samfest").innerHTML = "EXPIRED";
                 }
                 }, 1000);
             </script>

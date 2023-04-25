@@ -73,14 +73,14 @@ nav {
   
 
 .nav-link {
+
     color: #000000;
     text-decoration: none;
-    font-size: 14px;
-    margin: 0 42px;
     transition: all 0.3s ease-in-out;
     display: block;
-    padding: 10px  
-    
+    padding: 10px;  
+    font-size: 14px;
+    margin: 0 15px;
 }
   
 .nav-link:hover{
@@ -134,25 +134,21 @@ nav {
 
 /* video og tekst foran */
 
-.stemningsvideo {
+#stemningsvideo {
     position: relative;
     margin-top: 50px;
-    
-  
-
 }
 
   
 video {
+    width: 100%;
     
-    display: block;
 }
 
-  
-.stemningsvideo h1 {
+#stemningsvideo h1 {
   position: absolute;
   text-align: center;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -163,9 +159,6 @@ video {
   opacity: 0.7;
 }
 
-
-
-  
 /* kunstnernavne display */
 
 #kunstnernavne {
@@ -189,8 +182,7 @@ video {
 #linje{
 	border-bottom: black solid 2px; 
 	width: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
+
 }
 
 #navne2 {
@@ -198,22 +190,23 @@ video {
   white-space: nowrap;
   animation: kunstner2 20s linear infinite ;
   font-size: 3vw;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
 }
 
-@-webkit-keyframes kunstner {
-    from { -webkit-transform: translateX(-100%); }
-    to { -webkit-transform: translateX(0%); }
+@keyframes kunstner {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0%); }
 }
 
-@-webkit-keyframes kunstner2 {
-    from { -webkit-transform: translateX(0%); }
-    to { -webkit-transform: translateX(-100%); }
+@keyframes kunstner2 {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
     
 }
 
 /* program */
-
 #program{
     text-transform: uppercase;
     padding-top: 100px;
@@ -224,19 +217,18 @@ video {
     font-size: 8vw;
 }
 
-.plakatlaptop{
+#plakatlaptop{
     display: none;
 }
 
-.plakat {
+#plakat {
     height: 100%;
     width: 100%;
-    position: relative;
-    
+    position: relative; 
 }
 
   
-.plakat img {
+#plakat img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -244,18 +236,12 @@ video {
   
 .kanpboks {
     padding-top: 5%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    
-    
+    width: 100%; 
 }
   
 .knap {
   background-color: #F9D74D;
   color: black;
-  border: none;
   width: 50%;
   height: 50px;
   font-size: 2vw;
@@ -385,7 +371,7 @@ height: 100%;
     font-size: 25px;
 }
 
-#demo{
+#samfest{
     margin-top: 8%;
     text-align: center;
     font-size: 55px;
@@ -527,7 +513,7 @@ footer {
 
 /* laptop repsonsiv */
 
-@media (min-width: 811px) {
+@media (min-width: 768px) {
 
     /* header */
 
@@ -576,17 +562,14 @@ footer {
 
     /* main */
 
-    /* plakat */
+    /* plakat laptop*/
 
-    .plakat{
+    #plakat{
         display: none;
     }
 
-   
 
-  
-
-    .plakatlaptop{
+    #plakatlaptop{
     display: block;
     height: 100%;
     width: 105%;
@@ -594,7 +577,7 @@ footer {
 
     }
 
-    .plakatlaptop img{
+    #plakatlaptop img{
 
      height: 100%;
      width: 100%;
@@ -626,8 +609,9 @@ footer {
 
     #bestilbillet2{
 
+        
         text-align: center;
-        padding: 2%;
+        padding: 3%;
         flex-basis: 50%;
         padding-left: 40px;
         text-align: left;
@@ -650,18 +634,7 @@ footer {
         padding-bottom: 40px;
 
     }  
-      
 
-
-    
-
-    
-
-    /* nyhedsbrev */
-
-
-   
-   
 
     /* footer */
 
@@ -692,14 +665,6 @@ footer {
         overflow-x: auto;
         flex-basis: 25%;
     }
-
-    
-  
-  
-
-    
-
-
 }
 
 
@@ -764,24 +729,11 @@ footer {
     font-weight: 900;
      font-size: 2vw;      
     }
-   
-   
-   
-   
-   
+
+    .nav-link{
+        font-size: 16px;
+        margin: 0 60px;
+     }
    
 }
 
-
-@media (max-width: 1200px) {
-
-
-    
-
- .nav-link{
- font-size: 14px;
- margin: 0 15px;
- }
-
-
-}
