@@ -210,12 +210,18 @@ video {
 #program{
     text-transform: uppercase;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 #program h1{
     font-size: 8vw;
 }
+
+#program p{
+    font-size: 3vw;
+}
+
+
 
 #plakatlaptop{
     display: none;
@@ -241,6 +247,7 @@ video {
   
 .knap {
   background-color: #F9D74D;
+  border: none;
   color: black;
   width: 50%;
   height: 50px;
@@ -429,6 +436,7 @@ input[type=submit]:hover {
 
   
 footer {
+    margin-top: 100px;
     background-color: #BBBBBB;
     padding: 20px;
     display: flex;
@@ -487,12 +495,12 @@ footer {
 #programside h2, p,h3 {
     margin: 15px;
     padding: 0;
-    hyphens: auto;
+    
     
 }
     
 #programside h1{
-    hyphens: auto;
+    
     font-size: 6vw;
     color: #F9D74D;
     width: 70%;
@@ -500,12 +508,19 @@ footer {
 }
 
 #programside h2{
-    hyphens: auto;
+    
     font-size: 6vw;
     color: black;
     width: 100%;
 }
-  
+
+#artister{
+    display: none;
+}
+
+.dato{
+    display: none;
+}
 
   
 
@@ -657,14 +672,57 @@ footer {
         display: none;
     }
 
-    #programsidelaptop{
-        display: flex;
-        flex-wrap: wrap;
-        width: 95%;
-        height: auto;
-        overflow-x: auto;
-        flex-basis: 25%;
+    #artister {
+        padding-top: 5%;
+        display: block;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
     }
+      
+    .artist {
+        display: inline-block;
+        width: 250px;
+        height: 350px;
+        margin-right: 20px;
+        background-color: #f0f0f0;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        
+    }
+      
+    .artist img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+      
+    .artist p {
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+      
+    .artist h2 {
+        margin-bottom: 10px;
+        font-size: 2vw;
+    }
+    
+    .dato{
+        font-size: 4vw;
+        display: block;
+        padding: 50px;
+        color: #F9D74D;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        letter-spacing: 2px;
+    }
+
+
+      
+    
+      
 }
 
 
