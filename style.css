@@ -146,13 +146,15 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  font-size: 8vw;
+  font-size: 6vw;
   color: #F9D74D;
-  width: 70%;
+  width: 60%;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  opacity: 0.7;
 }
-video {
-}
+
+
+
   
 /* kunstnernavne display */
 
@@ -167,41 +169,57 @@ video {
 #navne {
   white-space: nowrap;
   animation: kunstner 20s linear infinite;
-  font-size: 45px;
+  font-size: 3vw;
+  padding-top: 8px;
+  padding-bottom: 8px;
   
 
 }
 
 #linje{
 	border-bottom: black solid 2px; 
-	width: 100%;	
+	width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 #navne2 {
   
   white-space: nowrap;
-  animation: kunstner 20s linear infinite;
-  font-size: 45px;
+  animation: kunstner2 20s linear infinite ;
+  font-size: 3vw;
 
 }
 
 @-webkit-keyframes kunstner {
-    from { -webkit-transform: translateX(100%); }
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(0%); }
+}
+
+@-webkit-keyframes kunstner2 {
+    from { -webkit-transform: translateX(0%); }
     to { -webkit-transform: translateX(-100%); }
-  }
+    
+}
 
 /* program */
 
 #program{
     text-transform: uppercase;
+    padding-top: 200px;
+    padding-bottom: 100px;
 }
 
 #program h1{
     font-size: 8vw;
 }
 
+.plakatlaptop{
+    display: none;
+}
+
 .plakat {
-    height: 350px;
+    height: 100%;
     width: 100%;
     position: relative;
     
@@ -214,7 +232,8 @@ video {
 }
   
 .kanpboks {
-    position: absolute;
+    padding-top: 5%;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -269,7 +288,7 @@ video {
 
 #bestilbilletlaptop{
 
-display: none;
+ display: none;
 
 }
 
@@ -340,16 +359,17 @@ height: 100%;
     text-align: center;
     font-size: 55px;
     padding-bottom: 5%;
-    tex
-   
+    
 }
 
 /* nyhedsbrev */
 
+
+
 .nyhedsbrev {
     margin-top: 40px;
     padding: 20px;
-    text-align:center;
+    text-align: center;
 }
   
   
@@ -392,7 +412,7 @@ input[type=submit]:hover {
 
   
 footer {
-    background-color: #f2f2f2;
+    background-color: #BBBBBB;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -426,6 +446,10 @@ footer {
 
 /* programsiden */
 
+.programsidelaptop{
+    display: none;
+}
+
 #programside {
     display: flex;
     flex-direction: column;
@@ -446,7 +470,7 @@ footer {
 #programside h2, p,h3 {
     margin: 15px;
     padding: 0;
-    font-family: ;
+    
 }
     
 #programside h1{
@@ -520,6 +544,29 @@ footer {
 
     /* main */
 
+    /* plakat */
+
+    .plakat{
+        display: none;
+    }
+
+    .plakatlaptop{
+    display: block;
+    
+    height: 100%;
+    width: 105%;
+    position: relative;
+
+    }
+
+    .plakatlaptop img{
+
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+
+    }
+
     /* bestil billet laptop */
 
     #bestilbillet{
@@ -529,6 +576,7 @@ footer {
 
     #bestilbilletlaptop {
         display: flex;
+        padding-top: 50px;
     }
       
     #billetbillede {
@@ -544,7 +592,7 @@ footer {
     #bestilbillet2{
 
         text-align: center;
-        padding: 5%;
+        padding: 2%;
         flex-basis: 50%;
         padding-left: 40px;
         text-align: left;
@@ -570,11 +618,9 @@ footer {
       
 
 
-    /* nedtælling */
+    
 
-    #nedtælling{
-    background-color: white;
-    }
+    
 
     /* nyhedsbrev */
 
@@ -596,6 +642,28 @@ footer {
         
         
     }
+
+    /* programside */
+
+    #programside{
+        display: none;
+    }
+
+    #programsidelaptop{
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        height: auto;
+        overflow-x: auto;
+        flex-basis: 25%;
+    }
+
+    
+  
+  
+
+    
+
 
 }
 
