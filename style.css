@@ -17,7 +17,7 @@ html, body {
 body{
     font-family: "Montserrat";
     position: relative;
-    hyphens: auto;
+    
     
 }
 
@@ -80,7 +80,7 @@ nav {
     display: block;
     padding: 10px;  
     font-size: 14px;
-    margin: 0 15px;
+    margin: 0 10px;
 }
   
 .nav-link:hover{
@@ -777,7 +777,18 @@ footer {
         text-align: left;
         
         
+        
     }
+    #medhjælpertekstlaptop1{
+    
+        text-align: center;
+        padding: 5%;
+        flex-basis: 50%;
+        padding-left: 40px;
+        text-align: left;
+    }
+
+    
     #medhjælpertekstlaptop h5{
 
         font-size: 1vw;
@@ -800,7 +811,7 @@ footer {
 
     .nav-link{
         font-size: 16px;
-        margin: 0 60px;
+        margin: 0 50px;
      }
    
 }
