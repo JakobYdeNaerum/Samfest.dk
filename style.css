@@ -167,6 +167,7 @@ video {
   width: 100%;
   overflow: hidden;
   background-color: #F2F2F2;
+  margin-top: -5px;
  
 }
 
@@ -729,15 +730,12 @@ footer {
         color: #F9D74D;
         text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
         letter-spacing: 2px;
-    }
-
-
-      
-    
+    } 
       
 }
 
 
+/* Andet laptop breakpoint */
 
 @media (min-width: 1200px) {
 
