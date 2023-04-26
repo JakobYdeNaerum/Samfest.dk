@@ -142,8 +142,7 @@ nav {
   
 video {
     width: 100%;
-    
-    
+      
 }
 
 #stemningsvideo h1 {
@@ -346,10 +345,10 @@ display: none;
 }
 
 #medhjælpertekst h5{
-    padding-right: 20%;
-    padding-left: 20%;
-    font-weight: bold;
-    font-size: 16px;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-weight:600;
+    font-size: 3.5vw;
     text-align: center;
     padding-bottom: 40px;
 
@@ -714,13 +713,14 @@ footer {
       
     .artist p {
         margin-bottom: 5px;
-        font-size: 14px;
+        font-size: 0.8vw;
         line-height: 1.5;
     }
       
     .artist h2 {
         margin-bottom: 10px;
-        font-size: 2vw;
+        font-size: 1.1vw;
+        font-weight: bolder;
     }
     
     .dato{
